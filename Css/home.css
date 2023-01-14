@@ -1,0 +1,552 @@
+/*cabeçalho*/
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+}
+
+header {
+    padding: 20px 0;
+    background: black; 
+    border-bottom: solid 1px rgb(50, 161, 195);
+    font-family: 'Quattrocento Sans', sans-serif;
+   /* background-image: url(sonic.gif);*/
+    
+}
+
+.caixa {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+    
+    }
+    
+.caixa img {
+    width: 25%;
+}
+
+.menu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    border-radius: 10px;
+    padding-right:15px ;
+    background: black;
+
+}
+.menu li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+.menu a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: rgb(50, 161, 195);
+    text-decoration: underline;
+
+
+
+}
+ /*///////////////////////*/
+.mobile {
+    display: none;
+}
+.menu-mobile {
+    top: 0px;
+    right: 0px;
+
+    border-radius: 10px;
+    padding-right:15px ;
+    background: black;
+
+}
+.menu-mobile li {
+    display: block;
+    margin-top: 5px;
+    
+}
+.menu-mobile a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+.menu-mobile a:hover {
+    color: rgb(50, 161, 195);
+    text-decoration: underline;
+}
+
+.video {
+    width: 560px;
+    margin: 3em auto;
+}
+main {
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-align: center;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 940px;
+    height: 325px;
+    overflow:hidden
+}
+.slides {
+    display: flex;
+    width: 400%;
+    height: 400px;
+}
+.slides input {
+    display: none;
+}
+.slide {
+    width: 230px;
+    position: relative;
+    margin-left: 5px;
+    transition: 2s;
+    
+}
+.slide img {
+    width: 230px;
+    border-radius: 5px;
+    
+}
+.manual-navegacao {
+    position: absolute;
+    width: 940px;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+
+}
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background: white;
+}
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -6.25%;
+}
+#radio3:checked ~ .first {
+    margin-left: -12.50%;
+}
+#radio4:checked ~ .first {
+    margin-left: -18.65%;
+}
+.navegacao-auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navegacao-auto {
+    position: absolute;
+    width: 940px;
+    display: flex;
+    margin-top: 300px;
+    justify-content: center;
+}
+.navegacao-auto div:not(:last-child){
+    margin-right: 20px;
+}
+#radio1:checked ~ .navegacao-auto .auto-btn1 {
+    background-color: #fff;
+}
+#radio2:checked ~ .navegacao-auto .auto-btn2 {
+    background-color: #fff;
+}
+#radio3:checked ~ .navegacao-auto .auto-btn3 {
+    background-color: #fff;
+}
+#radio4:checked ~ .navegacao-auto .auto-btn4 {
+    background-color: #fff;
+}
+
+
+
+
+
+.titulo-principal, .conferir {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0 ;
+
+}
+h3 em, p em {
+    color: rgb(50, 161, 195);
+}
+.sobre {
+    color: white;
+    font-size: 20px;
+    width: 940px;
+    margin: 1em auto ;
+
+}
+.button {
+    padding: 20px 30px;
+    font-size: 20px;
+    font-family:'Quattrocento Sans', sans-serif; 
+    background: rgb(50, 161, 195);
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    margin-bottom: 2em;
+    border: none;
+}
+.button:hover {
+    transform: scale(1.2);
+}
+   
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+.central-button {
+    width: 232px;
+    margin: 0 auto;
+}
+/* ///////////////////////////////////////////////////////////////*/
+.beneficios {
+    width: 900px;
+    display: flex;
+    justify-content:space-around;
+    margin: auto;
+    height: 200px;
+    
+
+}
+.edificio img{
+    width: 50%;
+    margin-top: 2em;
+    
+}
+.edificio {
+    width: 150px;
+    height: 200px;
+    background: rgb(249, 249, 249);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0 rgb(38, 38, 38);
+
+    
+    
+}
+.benef {
+    padding-top: 10px;
+    text-align: left;
+    border-top: solid 1px black;
+    
+}
+
+    
+
+
+/*//////////////////////////////////////////////////////////////////////////*/
+
+    
+.mapa {
+    background: linear-gradient(black , white);
+
+}
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* rodape */
+
+.whats {
+    width: 25%;
+    height: 60px;
+
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 2em;
+    right: 1em;
+    display: inline-block;
+    width: 250px;
+
+}
+.wha {
+    background: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: inline;
+    text-decoration: none;
+    border: solid 1px black;
+    color: black;
+    float: left;
+    margin: 15px 0 0 10px;
+    
+
+     
+}
+.seta {
+    display: block;
+    padding-top: 27px;
+    float: left;
+
+}
+.seta img{
+    width: 7px;
+    height: 10px;
+    
+
+} 
+.redes-sociais p{
+    font-family:'Quattrocento Sans', sans-serif; 
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+
+.redes-sociais img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+    
+.redes-sociais img:hover {
+    border-radius: 5px;
+    background: rgb(159, 156, 156);
+}
+
+
+.footer {
+    background: white;
+    text-align: center;
+    border-top: solid 1.5px rgb(50, 161, 195);
+
+
+    
+}
+footer img {
+    width: 300px;
+    height: 200px;
+
+}
+.copyright {
+    font-size: 15px;
+    padding: 20px 0;
+}
+@media screen and (max-width: 955px){
+    .caixa,.produtos,.sobre, .principal, .slider, .mapa-conteudo, .video , .beneficios, .manual-navegacao, .navegacao-auto {
+        width: auto;
+    }
+    h1 {
+        width: 200px;
+        height: 100px;
+    
+    }
+    
+    
+    .caixa img {
+        width: 100%;
+    
+    }
+    
+    .wha, .seta{
+        display: none;
+    }
+    .sobre {
+        margin: 10px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .manual-navegacao, .navegacao-auto {
+        display: none;
+        
+        
+    }
+    .whatsapp {
+        width: 65px;
+        bottom: 3em;
+    }
+    .whats {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 730px){
+    .caixa,.produtos,.sobre, .principal, .slider, .mapa-conteudo, .video , .beneficios, .manual-navegacao, .navegacao-auto {
+        width: auto;
+    }
+    h1 {
+        width: 196px;
+        height: 100px;
+    
+    }
+    
+    
+    .caixa img {
+        width: 100%;
+    
+    }
+    
+    .wha, .seta{
+        display: none;
+    }
+    .sobre {
+        margin: 10px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .manual-navegacao, .navegacao-auto {
+        display: none;
+        
+        
+    }
+    .whatsapp {
+        width: 65px;
+        bottom: 3em;
+    }
+    .whats {
+        width: 100%;
+    }
+    .menu li{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .caixa,.produtos,.sobre, .principal,.slider, .mapa-conteudo, .video , .beneficios, .manual-navegacao, .navegacao-auto {
+        width: auto;
+    }
+    h1 {
+        width: 196px;
+        height: 100px;
+    
+    }
+    
+    
+    .caixa img {
+        width: 100%;
+    
+    }
+    
+    .wha, .seta, .menu{
+        display: none;
+    }
+    .sobre {
+        margin: 10px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+    .beneficios {
+        justify-content: center;
+    }
+    .manual-navegacao, .navegacao-auto {
+        display: none;
+        
+        
+    }
+    .mobile { 
+        display: block;
+        width:30%;
+        text-align: right;
+        
+        
+    }
+    .mobile button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: 30%;
+    }
+    .caixa {
+        display: flex;
+        justify-content:space-around;
+    }
+    .menu-mobile {
+        display: none;
+
+    }
+
+
+    
+        
+    .whatsapp {
+        width: 65px;
+        bottom: 3em;
+    }
+    .whats {
+        width: 100%;
+    }
+    .edificio {
+        width: 30%;
+    }
+    .edificio:not(:last-child) {
+        margin-right: 5px;
+    }
+    .slider {
+        width: 230px;
+        border-radius: 5px;
+    }
+    .slider img {
+        width: 230px;
+    }
+    #radio1:checked ~ .first {
+        margin-left: 0;
+    }
+    #radio2:checked ~ .first {
+        margin-left: -25%;
+    }
+    #radio3:checked ~ .first {
+        margin-left: -51%;
+    }
+    #radio4:checked ~ .first {
+        margin-left: -77%;
+    }
+    .titulo-principal, .conferir {
+        font-size: 24px;
+    }
+    .aberto {
+        display: block;
+    }
+
+    
+
+ 
+    
+}
