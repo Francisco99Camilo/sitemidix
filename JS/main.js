@@ -2,10 +2,10 @@ function menuAparecer() {
     let criarMenu = document.querySelector ('.menu-mobile') 
     if(criarMenu.classList.contains('aberto')) {
         criarMenu.classList.remove('aberto')
-        document.querySelector('.icone-menu').src = "/img/menu1.png"
+        document.querySelector('.icone-menu').src = "/Img/menu1.png"
     } else {
         criarMenu.classList.add('aberto') 
-        document.querySelector('.icone-menu').src = "/img/fechar.png"
+        document.querySelector('.icone-menu').src = "/Img/fechar.png"
     }
 }
 
