@@ -452,10 +452,24 @@ footer img {
         width: auto;
     }
     h1 {
-        width: 196px;
-        height: 100px;
+        width: 110px;
+        height: 40px;
+        margin-top: 10px;
     
     }
+    .caixa {
+        height: 70px;
+        width: auto;
+
+
+    }
+    .hed {
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        
+    }
+
     
     
     .caixa img {
@@ -473,6 +487,10 @@ footer img {
     .footer {
         width: 100%;
     }
+    .imagem {
+        width: 200px;
+        height: 150px;
+    }
     .beneficios {
         justify-content: center;
     }
@@ -483,8 +501,12 @@ footer img {
     }
     .mobile { 
         display: block;
-        width:30%;
+        width:25%;
         text-align: right;
+        margin-top: 10px;
+        height: 150px;
+        width: 120px;
+        float: right;
         
         
     }
@@ -496,11 +518,31 @@ footer img {
     }
     .caixa {
         display: flex;
-        justify-content:space-around;
+        justify-content: space-between;
+        margin-right: 10px;
+        margin-left: 30px;
     }
     .menu-mobile {
         display: none;
 
+    }
+    .menu-mobile a {
+        font-size: 18px;
+
+    }
+    .menu-mobile li {
+        margin: 15px;
+        
+
+    }
+    .menu-mobile ul {
+       text-align: right;
+       
+
+    }
+    .menu-mobile.aberto {
+        background-color: black;
+        border: 2px solid rgb(50, 161, 195);
     }
 
 
